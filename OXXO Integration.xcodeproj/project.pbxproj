@@ -14,9 +14,11 @@
 		3657225124BCDB450006A64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3657225024BCDB450006A64D /* Assets.xcassets */; };
 		3657225424BCDB450006A64D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3657225224BCDB450006A64D /* LaunchScreen.storyboard */; };
 		3657225724BCDB450006A64D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3657225624BCDB450006A64D /* main.m */; };
+		4B83F032C24BCC35FFC71076 /* Pods_OXXO_Integration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05194F7E68F366753014769C /* Pods_OXXO_Integration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05194F7E68F366753014769C /* Pods_OXXO_Integration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OXXO_Integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3657224124BCDB440006A64D /* OXXO Integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OXXO Integration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3657224424BCDB440006A64D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3657224524BCDB440006A64D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		3657225324BCDB450006A64D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3657225524BCDB450006A64D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3657225624BCDB450006A64D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9A2F1AB3444F5BC67D9A164 /* Pods-OXXO Integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OXXO Integration.debug.xcconfig"; path = "Target Support Files/Pods-OXXO Integration/Pods-OXXO Integration.debug.xcconfig"; sourceTree = "<group>"; };
+		D87D485F60C5FAA831DE2F09 /* Pods-OXXO Integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OXXO Integration.release.xcconfig"; path = "Target Support Files/Pods-OXXO Integration/Pods-OXXO Integration.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B83F032C24BCC35FFC71076 /* Pods_OXXO_Integration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1007B8AE54835F17ACA92D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05194F7E68F366753014769C /* Pods_OXXO_Integration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3657223824BCDB440006A64D = {
 			isa = PBXGroup;
 			children = (
 				3657224324BCDB440006A64D /* OXXO Integration */,
 				3657224224BCDB440006A64D /* Products */,
+				B962BB751EE857217DD3C899 /* Pods */,
+				1007B8AE54835F17ACA92D50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,16 @@
 			path = "OXXO Integration";
 			sourceTree = "<group>";
 		};
+		B962BB751EE857217DD3C899 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9A2F1AB3444F5BC67D9A164 /* Pods-OXXO Integration.debug.xcconfig */,
+				D87D485F60C5FAA831DE2F09 /* Pods-OXXO Integration.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3657225A24BCDB450006A64D /* Build configuration list for PBXNativeTarget "OXXO Integration" */;
 			buildPhases = (
+				0BF991B744C5A92060B4BE0F /* [CP] Check Pods Manifest.lock */,
 				3657223D24BCDB440006A64D /* Sources */,
 				3657223E24BCDB440006A64D /* Frameworks */,
 				3657223F24BCDB440006A64D /* Resources */,
+				03F8A00DB1EEE3E5D5FAA68A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F8A00DB1EEE3E5D5FAA68A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OXXO Integration/Pods-OXXO Integration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OXXO Integration/Pods-OXXO Integration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OXXO Integration/Pods-OXXO Integration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BF991B744C5A92060B4BE0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OXXO Integration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3657223D24BCDB440006A64D /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		3657225B24BCDB450006A64D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A2F1AB3444F5BC67D9A164 /* Pods-OXXO Integration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		3657225C24BCDB450006A64D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87D485F60C5FAA831DE2F09 /* Pods-OXXO Integration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

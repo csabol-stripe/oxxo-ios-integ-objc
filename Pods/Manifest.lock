@@ -1,0 +1,22 @@
+PODS:
+  - Stripe (19.3.0)
+
+DEPENDENCIES:
+  - Stripe (from `https://github.com/stripe/stripe-ios.git`, branch `TEMP-add-oxxo-payment-method-beta-header`)
+
+EXTERNAL SOURCES:
+  Stripe:
+    :branch: TEMP-add-oxxo-payment-method-beta-header
+    :git: https://github.com/stripe/stripe-ios.git
+
+CHECKOUT OPTIONS:
+  Stripe:
+    :commit: d0c1cac0746d73b3167a477d01738e993798b83a
+    :git: https://github.com/stripe/stripe-ios.git
+
+SPEC CHECKSUMS:
+  Stripe: dd5bfdd5f1daed4f9ddbfb47e9449ec302f9f708
+
+PODFILE CHECKSUM: a6b181caec8d0679a218232e2ffb7a5a3f5fbca1
+
+COCOAPODS: 1.9.3
